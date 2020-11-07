@@ -1,3 +1,81 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main, footer {
+  color: white;
+  padding: 2rem;
+}
+
+header {
+  background-image: url("../img/main_jp.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  background-color: #3D9970;
+  display: flex;
+  flex: 1 0 auto;
+}
+
+footer {
+  background-color: #001F3F;
+}
+
+.bg-fade {
+  background-color: rgba(1, 1, 51, 0.7);
+}
+
+.navbar {
+  display: flex;
+  padding: 2rem;
+  color: white;
+}
+.navbar .branding {
+  display: flex;
+  align-items: center;
+}
+.navbar .branding .social {
+  border-left: 2px solid white;
+  padding: 20px;
+  margin: 10px 30px;
+}
+.navbar .branding .social .icon {
+  width: 30px;
+  height: 30px;
+}
+.navbar .menu {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.navbar .menu li {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.landing-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.landing-banner h1 {
+  color: #F702CB;
+}
 
 /*# sourceMappingURL=main.css.map */
