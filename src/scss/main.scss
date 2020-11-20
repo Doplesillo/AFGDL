@@ -1,0 +1,251 @@
+$white : #FFFFFF;
+$main-color : rgba(247,2,203,1);
+$blue : rgba(28,108,255,1);
+$main-gradient : linear-gradient(180deg, $blue 0%, $main-color 100%);
+$transparent-blue : rgba(1,1,51,0.7);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+} 
+html {
+  height: 100%;
+  color: white;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section, footer {
+  padding: 2.5rem;
+}
+header {
+  background-image: url('../img/main_jp.jpg');
+  background-position: center;
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+footer {
+  background-color: #001F3F;
+}
+
+.bg-fade {
+  background-color: rgba($color: #010133, $alpha: 0.6)
+}
+.dark-fade {
+  background-color: rgba($color: #010133, $alpha: 0.9)
+}
+
+.navbar {
+  display: flex;
+  padding: 2rem;
+  color: white;
+  .branding {
+    display: flex;
+    align-items: center;
+    .social {
+      border-left: 2px solid white;
+      padding: 20px;
+      margin: 10px 30px;
+      .icon{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .menu{
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    li {
+      margin: 0 10px;
+      font-size: 20px;
+    }
+  }
+}
+/* Landing Banner */
+.landing-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  h1{
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #F702CB;
+    font-size: 5rem;
+    -webkit-text-fill-color: #F702CB; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($color: #ffffff, $alpha: 0.7);
+  }
+  h2{
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+    -webkit-text-fill-color: #ffffff; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($color: #F702CB, $alpha: 0.2);
+  }
+  .af-alliances {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    width: 100%;
+    background-color: $transparent-blue;
+    margin-top: auto;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 2rem;
+    span {
+      margin: 1rem;
+    }
+    .alliances-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-left: 2px solid white;
+      height: 100%;
+      img {
+        height: 64px;
+        margin: 1rem;
+      }
+    }
+  }
+}
+/* Buttons */
+.btn {
+  min-width: 200px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+}
+.af-color {
+  color: $white;
+  background: $main-gradient;  
+}
+
+/* About us */
+main{
+  background: linear-gradient(90deg, rgba(1, 1, 51, 0.9025) 0%, rgba(29, 43, 100, 0.95) 100%);
+  #about {
+    width: 100%;
+    .container{
+      display: flex;
+      div{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 50%;
+        min-height: 300px;
+        max-height: 600px;
+      }
+      div:last-child{
+        background-image: url('http://placehold.it/300x300');
+        background-size: cover;
+        background-position: center ;
+      }
+    }
+  }
+
+  #team{
+    width: 100%;
+    background-image: url('../img/pexels-george-becker-374914.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 0;
+    .team-container {
+      padding: 2rem;
+      width: 100%;
+      min-height: 400px;
+      background-color: rgba($color: #010133, $alpha: 0.7);
+      .team-cards-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 400px;
+        /*
+        .team-card-bg {
+          max-width: 430px;
+          min-height: 250px;
+          width: 100%;
+          background-color: rgba($color: #232141, $alpha: 1);
+          .af-bg-logo{
+            max-width: 430px;
+            min-height: 250px;
+            width: 100%;
+            background-image: url('../img/AF-logo.png');
+            background-position: right bottom;
+            background-size: 180px 83px;
+            background-repeat: no-repeat;
+          }
+        }
+        */
+        .team-card {
+          display: grid;
+          grid-template-rows: 20px 75px 75px 40px 20px;
+          grid-template-columns: 20px 150px 20px 180px 20px;
+          background-color: rgba($color: #151515, $alpha: 1);
+          min-width: 390px;
+          min-height: 230px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgba($color: #151515, $alpha: 1);
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
