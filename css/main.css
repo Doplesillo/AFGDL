@@ -49,7 +49,7 @@ hr {
   margin-left: 0;
   color: transparent;
   width: 50%;
-  border: transparent;
+  border: solid 0px transparent;
 }
 
 .bg-fade {
@@ -205,7 +205,7 @@ main #about .container div {
 }
 
 main #about .container div:last-child {
-  background-image: url("/img/logoyfondo.jpg");
+  background-image: url("../img/logoyfondo.jpg");
   background-size: cover;
   background-position: center;
 }
