@@ -49,6 +49,7 @@ hr {
   margin-left: 0;
   color: transparent;
   width: 50%;
+  border: transparent;
 }
 
 .bg-fade {
@@ -89,6 +90,14 @@ hr {
   margin-left: auto;
 }
 
+.navbar .menu a {
+  color: white;
+}
+
+.navbar .menu a:hover {
+  color: #f702cb;
+}
+
 .navbar .menu li {
   margin: 0 10px;
   font-size: 20px;
@@ -118,6 +127,7 @@ hr {
   margin-top: 0;
   font-size: 3rem;
   font-weight: 100;
+  text-align: center;
   color: white;
   -webkit-text-fill-color: #ffffff;
   /* Will override color (regardless of order) */
@@ -190,14 +200,18 @@ main #about .container div {
   flex-direction: column;
   padding: 2rem;
   width: 50%;
-  min-height: 300px;
+  min-height: 350px;
   max-height: 600px;
 }
 
 main #about .container div:last-child {
-  background-image: url("http://placehold.it/300x300");
+  background-image: url("/img/logoyfondo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+main #about .container h3, main #about .container h4 {
+  margin: .5rem 0;
 }
 
 main #team {
