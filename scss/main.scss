@@ -1,8 +1,9 @@
 $white : #FFFFFF;
-$main-color : rgba(247,2,203,1);
+$main-color : #FF0082;
 $blue : rgba(28,108,255,1);
 $main-gradient : linear-gradient(180deg, $blue 0%, $main-color 100%);
 $transparent-blue : rgba(1,1,51,0.7);
+$morado : #410182; 
 
 * {
   box-sizing: border-box;
@@ -235,11 +236,11 @@ main{
             grid-column: 2/3;
             grid-row: 4/5;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             .icon {
               height: 25px;
-              height: 25px;
+              margin: 3px;
             }
           }
           .team-description {
@@ -320,6 +321,51 @@ main{
             margin-top: auto;
           }
         }
+        .uniclr {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url('../img/games/phonon_opacity_60.png');
+          background-size: cover;
+          background-position: top;
+          .uniclr-logo{
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .figtherz {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url('../img/games/android_21_opacity_60.png');
+          background-size: cover;
+          background-position: top;
+          .figtherz-logo{
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .crosstag {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url('../img/games/ruby_opacity_60.png');
+          background-size: cover;
+          background-position: center;
+          .crosstag-logo{
+            height: 70px;
+            margin-top: auto;
+          }
+        }
         .frase{
           font-weight: 200;
           font-size: 2rem;
@@ -340,6 +386,15 @@ main{
       }
       .granblu-bg-color{
         background-color: rgba($color: #292857, $alpha: 1.0);
+      }
+      .uniclr-bg-color{
+        background-color: rgba($color: #254227, $alpha: 1.0);
+      }
+      .figtherz-bg-color{
+        background-color: rgba($color: #1d1b1d, $alpha: 1.0);
+      }
+      .crosstag-bg-color{
+        background-color: rgba($color: #5c375f, $alpha: 1.0);
       }
     }
   }

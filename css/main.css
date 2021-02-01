@@ -36,12 +36,12 @@ footer {
 }
 
 a {
-  color: #f702cb;
+  color: #FF0082;
   text-decoration: none;
 }
 
 hr {
-  background: linear-gradient(to right, #1c6cff, #f702cb);
+  background: linear-gradient(to right, #1c6cff, #FF0082);
   height: 5px;
   margin-bottom: .5rem;
   margin-top: .5rem;
@@ -95,7 +95,7 @@ hr {
 }
 
 .navbar .menu a:hover {
-  color: #f702cb;
+  color: #FF0082;
 }
 
 .navbar .menu li {
@@ -179,7 +179,7 @@ hr {
 
 .af-color {
   color: #FFFFFF;
-  background: linear-gradient(180deg, #1c6cff 0%, #f702cb 100%);
+  background: linear-gradient(180deg, #1c6cff 0%, #FF0082 100%);
 }
 
 /* About us */
@@ -269,13 +269,13 @@ main #team .team-container .team-cards-container .team-card .team-social {
   grid-column: 2/3;
   grid-row: 4/5;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 main #team .team-container .team-cards-container .team-card .team-social .icon {
   height: 25px;
-  height: 25px;
+  margin: 3px;
 }
 
 main #team .team-container .team-cards-container .team-card .team-description {
@@ -289,7 +289,7 @@ main #team .team-container .team-cards-container .team-card .team-description {
 
 main #team .team-container .team-cards-container .team-card .team-description .nombre {
   margin-bottom: 5px;
-  color: #f702cb;
+  color: #FF0082;
 }
 
 main #team .team-container .team-cards-container .team-card .team-description p {
@@ -364,6 +364,57 @@ main #games .games-container .game .granblu .granblu-logo {
   margin-top: auto;
 }
 
+main #games .games-container .game .uniclr {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/phonon_opacity_60.png");
+  background-size: cover;
+  background-position: top;
+}
+
+main #games .games-container .game .uniclr .uniclr-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+main #games .games-container .game .figtherz {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/android_21_opacity_60.png");
+  background-size: cover;
+  background-position: top;
+}
+
+main #games .games-container .game .figtherz .figtherz-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+main #games .games-container .game .crosstag {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/ruby_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .crosstag .crosstag-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
 main #games .games-container .game .frase {
   font-weight: 200;
   font-size: 2rem;
@@ -387,6 +438,18 @@ main #games .games-container .blazblue-bg-color {
 
 main #games .games-container .granblu-bg-color {
   background-color: #292857;
+}
+
+main #games .games-container .uniclr-bg-color {
+  background-color: #254227;
+}
+
+main #games .games-container .figtherz-bg-color {
+  background-color: #1d1b1d;
+}
+
+main #games .games-container .crosstag-bg-color {
+  background-color: #5c375f;
 }
 
 footer {
