@@ -228,7 +228,7 @@ main {
         min-height: 400px;
         .team-card {
           display: grid;
-          grid-template-rows: 20px 50px 50px 40px 20px;
+          grid-template-rows: 10px 50px 50px 40px 10px;
           grid-template-columns: 10px 100px 10px 170px 10px;
           background-color: rgba($color: #1e1e48, $alpha: 1);
           min-width: 300px;
@@ -269,14 +269,19 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            font-size: 20px;
+            font-size: 24px;
             .nombre {
               margin-bottom: 5px;
               color: $main-color;
+              text-align: center;
             }
-            p {
-              font-size: 10px;
-              font-weight: 400;
+            ul {
+              list-style-image: url('../img/icons/icons8-round-16.png');
+              font-size: 16px;
+              margin-top: .5rem;
+              li {
+                margin: .1rem 0;
+              }
             }
           }
         }
@@ -559,38 +564,22 @@ footer {
     max-width: 960px;
   }
   main {
-    #team {
-      .team-container {
-        .team-cards-container {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          min-height: 400px;
-          .team-card {
-            display: grid;
-            grid-template-rows: 20px 75px 75px 40px 20px;
-            grid-template-columns: 20px 150px 20px 180px 20px;
-            background-color: rgba($color: #1e1e48, $alpha: 1);
-            min-width: 390px;
-            min-height: 230px;
-            margin: 15px;
-            .team-photo {
-              grid-column: 2/3;
-              grid-row: 2/4;
-              border-radius: 50%;
-              width: 150px;
-              height: 150px;
-              object-fit: cover;
-              object-position: center;
-            }
-          }
+    #about {   
+      .container {
+        h3{
+          font-size: 2rem;
+        }
+        h4 {
+          margin: 0.5rem 0;
+        }
+        p { 
+          font-size: 20px;
         }
       }
     }
   }
 }
-}
+
 
 @media (min-width: 1200px) {
   .container,
@@ -603,4 +592,5 @@ footer {
   hr {
     width: 20%;
   }
+}
 }
