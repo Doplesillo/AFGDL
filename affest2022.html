@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph Protocol  -->
+    <meta property="og:title" content="Astral Finish Festival 2022" />
+    <meta property="og:description" content="¡Se acerca el #AFFEST22, la fiesta para la FGC en Guadalajara en colaboración con @ligaaceesports!">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://afgdl.com/affest2022" />
+
     <link rel="icon" type="image/png" href="favicon.png">
-    <title>AFGDL | AFFEST 2022</title>
+    <title>AFGDL | Astral Finish FEST 2022</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,6 +18,48 @@
 </head>
 <body>
     <style>
+        @font-face {
+          font-family: 'Druk Bold Regular';
+          src: url(fonts/Druk_Bold_Regular.ttf);
+        }
+        @font-face {
+          font-family: 'Druk Wide Bold';
+          src: url(fonts/Druk_Wide_Bold.ttf);
+        }
+        
+        .font-DKR {
+          font-family: 'Druk Bold Regular';
+          letter-spacing:2px;
+        }
+        .font-DWB {
+          font-family: 'Druk Wide Bold';
+        }
+        .landing-banner {
+          padding: 0 1rem;
+        }
+        .landing-banner h1 {
+          margin-top: auto;
+          margin-bottom: 0;
+          color: white;
+          font-size: 5rem;
+          -webkit-text-fill-color: white;
+          -webkit-text-stroke-width: 0;
+          -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+        }
+        .landing-banner h2, .subtitulo {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          font-size: 3rem;
+          font-weight: 100;
+          text-align: center;
+          color: white;
+          -webkit-text-fill-color: #ff0057;
+          -webkit-text-stroke-width: 0;
+          -webkit-text-stroke-color: white;
+        }
+        .social .icon {
+          margin: 5px;
+        }
         .contenedor {
             display: flex;
             flex-direction: column;
@@ -19,14 +67,20 @@
             justify-content: center;
             width: 100%;
             flex: 1 0 auto;
-            padding: 30px;
         }
         .w-50 {
             width: 100%;
         }
+        .mt-5 {
+          margin-top: 2rem;
+        }
+        .p-20 {
+          padding: 20px;
+        }
         header {
-            background-image: url(/img/fondo-affest.png);
-            background-size: contain;
+            background-image: url(/img/fondo1.png);
+            background-size: cover;
+            background-position: center;
         }
         @media (min-width: 575.98px) { }
 
@@ -40,13 +94,12 @@
             }
         }
 
-
         @media (min-width: 1199.98px) { }
 
         @media (min-width: 1399.98px) { }
     </style>
     <header>
-      <div class="affest-banner bg-fade">
+      <div class="affest-banner">
         <nav class="navbar">
           <div class="branding">
             <img src="img/AF-logo.png" alt="AFGDL Logo">
@@ -61,8 +114,9 @@
         </nav>
         <div class="landing-banner">
 
-          <h1>AFFEST2022</h1>
-          <h2>El evento de Anime Fighting más grande de México</h2>
+          <img class="w-50" src="img/principal.png" alt="Logo Principal AFFEST">
+          <img class="w-50 mt-5" src="img/fechas.png" alt="19 y 20 de Noviembre imagen fechas">
+          <h2 class="mt-5 font-DKR">INFORMATION HUB</h2>
           
           <div class="contenedor">
             <img class="w-50" src="img/aliados-affest.png" alt="aliados y patrocinadores affest">
@@ -71,12 +125,14 @@
       </div>
     </header>
     <main>
-        <div class="contenedor">
-            <h1>Pagina en Construcción</h1>
-            <h2>Consulta el start.gg para mas detalles</h2>
+        <div class="contenedor p-20">
+            <h2 class="mt-5 font-DKR subtitulo">HORARIOS DE TRANSMISIÓN</h2>
+            <img class="w-50" src="img/canales_oficiales.png" alt="Canales oficiales AFFEST 2022">
+            <img class="w-50 mt-5" src="img/horarios.png" alt="Horario AFFEST 2022">
+            <h2>Consulta el siguiente link para mas detalles</h2>
             <div>
                 <a href="https://www.start.gg/tournament/astral-finish-festival-2022/details">
-                    <img width="100%" src="/img/cartel.jpg" alt="cartel de affest">
+                  start.gg/tournament/astral-finish-festival-2022
                 </a>
             </div>
         </div>
