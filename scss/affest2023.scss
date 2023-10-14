@@ -1,0 +1,596 @@
+$white: #ffffff;
+$main-color: #ff0082;
+$blue: rgba(28, 108, 255, 1);
+$main-gradient: linear-gradient(180deg, $blue 0%, $main-color 100%);
+$transparent-blue: rgba(1, 1, 51, 0.7);
+$morado: #410182;
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  height: 100%;
+  color: white;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section,
+footer {
+  padding: 2.5rem;
+}
+header {
+  background-image: url("../img/main_jp.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+footer {
+  background-color: #001f3f;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+a {
+  color: $main-color;
+  text-decoration: none;
+}
+hr {
+  background: linear-gradient(to right, $blue, $main-color);
+  height: 5px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: transparent;
+  width: 50%;
+  border: solid 0px transparent;
+}
+
+.bg-fade {
+  background-color: rgba($color: #010133, $alpha: 0.6);
+}
+.dark-fade {
+  background-color: rgba($color: #010133, $alpha: 0.9);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+  .branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social {
+      border-top: 2px solid white;
+      border-left: 0;
+      padding: 10px;
+      margin: 10px 30px;
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .menu {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    a {
+      color: white;
+    }
+    a:hover {
+      color: $main-color;
+    }
+    li {
+      margin: 0 10px;
+      font-size: 20px;
+    }
+  }
+}
+/* Landing Banner */
+.landing-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  h1 {
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #f702cb;
+    font-size: 5rem;
+    -webkit-text-fill-color: #f702cb; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($color: #ffffff, $alpha: 0.7);
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    -webkit-text-fill-color: #ffffff; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba($color: #f702cb, $alpha: 0.2);
+  }
+  .af-alliances {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    width: 100%;
+    background-color: $transparent-blue;
+    margin-top: auto;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 2rem;
+    span {
+      margin: 1rem;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .sponsors-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-left: 0;
+      height: 100%;
+      img {
+        height: 64px;
+        margin: 1rem;
+      }
+    }
+  }
+}
+/* Buttons */
+.btn {
+  min-width: 200px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+}
+.af-color {
+  color: $white;
+  background: $main-gradient;
+}
+
+/* About us */
+main {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 1, 51, 0.9025) 0%,
+    rgba(29, 43, 100, 0.95) 100%
+  );
+  #about {
+    width: 100%;
+    .container {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100%;
+        min-height: 200px;
+      }
+      div:last-child {
+        background-image: url("../img/logoyfondo.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      h3,
+      h4 {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  #team {
+    width: 100%;
+    background-image: url("../img/pexels-george-becker-374914.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 0;
+    .team-container {
+      padding: 2rem;
+      width: 100%;
+      min-height: 400px;
+      background-color: rgba($color: #010133, $alpha: 0.7);
+      .team-cards-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-height: 400px;
+        .team-card {
+          display: grid;
+          grid-template-rows: 10px 50px 50px 40px 10px;
+          grid-template-columns: 10px 100px 10px 170px 10px;
+          background-color: rgba($color: #1e1e48, $alpha: 1);
+          min-width: 300px;
+          min-height: 160px;
+          margin: 15px;
+          .team-logo {
+            grid-column: 4/5;
+            grid-row: 3/5;
+            margin-top: auto;
+            margin-left: auto;
+            opacity: 0.1;
+            max-width: 140px;
+          }
+          .team-photo {
+            grid-column: 2/3;
+            grid-row: 2/4;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+          }
+          .team-social {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            .icon {
+              height: 20px;
+              margin: 3px;
+            }
+          }
+          .team-description {
+            grid-column: 4/5;
+            grid-row: 2/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 24px;
+            .nombre {
+              margin-bottom: 5px;
+              color: $main-color;
+              text-align: center;
+            }
+            ul {
+              list-style-image: url('../img/icons/icons8-round-16.png');
+              font-size: 16px;
+              margin-top: .5rem;
+              li {
+                margin: .1rem 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #games {
+    .games-container {
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .game {
+        width: 300px;
+        height: 230px;
+        margin: 10px;
+        .guilty {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/Millia_Guilty_Gear_Strive_60_opacity.png");
+          background-size: cover;
+          background-position: top;
+          .guilty-logo {
+            width: 200px;
+            margin-top: auto;
+          }
+        }
+        .blazblue {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/noel_opacity_60.png");
+          background-size: cover;
+          background-position: top;
+          .blazblue-logo {
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .granblu {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/Katalina_opacity_60.png");
+          background-size: cover;
+          background-position: top;
+          .granblu-logo {
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .uniclr {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/phonon_opacity_60.png");
+          background-size: cover;
+          background-position: top;
+          .uniclr-logo {
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .figtherz {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/android_21_opacity_60.png");
+          background-size: cover;
+          background-position: top;
+          .figtherz-logo {
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .crosstag {
+          width: 300px;
+          height: 230px;
+          display: flex;
+          padding: 1rem;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../img/games/ruby_opacity_60.png");
+          background-size: cover;
+          background-position: center;
+          .crosstag-logo {
+            height: 70px;
+            margin-top: auto;
+          }
+        }
+        .frase {
+          font-weight: 200;
+          font-size: 2rem;
+          margin-top: auto;
+          text-align: center;
+        }
+        .console-icon {
+          width: 80px;
+          margin: 5px;
+          align-self: flex-start;
+        }
+      }
+      .guilty-bg-color {
+        background-color: rgba($color: #512020, $alpha: 1);
+      }
+      .blazblue-bg-color {
+        background-color: rgba($color: #1d1d5d, $alpha: 1);
+      }
+      .granblu-bg-color {
+        background-color: rgba($color: #292857, $alpha: 1);
+      }
+      .uniclr-bg-color {
+        background-color: rgba($color: #254227, $alpha: 1);
+      }
+      .figtherz-bg-color {
+        background-color: rgba($color: #1d1b1d, $alpha: 1);
+      }
+      .crosstag-bg-color {
+        background-color: rgba($color: #5c375f, $alpha: 1);
+      }
+    }
+  }
+}
+footer {
+  background-color: rgba($color: #151515, $alpha: 1);
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+  
+
+@media (min-width: 768px) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 720px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    color: white;
+    .branding {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .social {
+        border-left: 2px solid white;
+        border-top: 0;
+        padding: 20px;
+        margin: 20px 30px;
+        .icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .menu {
+      margin-left: auto;
+    }
+  }
+  .landing-banner {
+    .af-alliances {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-height: 150px;
+      width: 100%;
+      background-color: $transparent-blue;
+      margin-top: auto;
+      color: $white;
+      font-size: 1.5rem;
+      padding: 2rem;
+      span {
+        margin: 1rem;
+        padding-bottom: 0;
+        border: 0;
+      }
+      .sponsors-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-left: 2px solid white;
+        height: 100%;
+        img {
+          height: 64px;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  h1,h2,h3,h4,h5 {
+    text-align: left;
+  }
+  hr {
+    background: linear-gradient(to right, $blue, $main-color);
+    height: 5px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: 0;
+    color: transparent;
+    width: 50%;
+    border: solid 0px transparent;
+  }
+  main {
+    background: linear-gradient(
+      90deg,
+      rgba(1, 1, 51, 0.9025) 0%,
+      rgba(29, 43, 100, 0.95) 100%
+    );
+    #about {
+      width: 100%;
+      .container {
+        display: flex;
+        flex-direction: row;
+        div {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          width: 100%;
+          min-height: 350px;
+          max-height: 600px;
+        }
+        div:last-child {
+          background-image: url("../img/logoyfondo.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        h3,
+        h4 {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 960px;
+  }
+  main {
+    #about {   
+      .container {
+        h3{
+          font-size: 2rem;
+        }
+        h4 {
+          margin: 0.5rem 0;
+        }
+        p { 
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1140px;
+  }
+  hr {
+    width: 20%;
+  }
+}
+}
