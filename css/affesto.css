@@ -322,7 +322,7 @@ main #team .team-container .team-cards-container .team-card .team-description ul
 main #team .team-container .team-cards-container .team-card .team-description ul li {
   margin: .1rem 0;
 }
-
+/*-------------------------------- Tarjetas Juegos ------------------------------*/
 main #games .games-container {
   width: 100%;
   min-height: 400px;
@@ -337,7 +337,7 @@ main #games .games-container .game {
   height: 230px;
   margin: 10px;
 }
-
+/*--------- Guilty ---------*/
 main #games .games-container .game .guilty {
   width: 300px;
   height: 230px;
@@ -354,7 +354,7 @@ main #games .games-container .game .guilty .guilty-logo {
   width: 200px;
   margin-top: auto;
 }
-
+/*--------- Blazblue ---------*/
 main #games .games-container .game .blazblue {
   width: 300px;
   height: 230px;
@@ -371,7 +371,7 @@ main #games .games-container .game .blazblue .blazblue-logo {
   height: 70px;
   margin-top: auto;
 }
-
+/*--------- Granblue---------*/
 main #games .games-container .game .granblu {
   width: 300px;
   height: 230px;
@@ -388,7 +388,7 @@ main #games .games-container .game .granblu .granblu-logo {
   height: 70px;
   margin-top: auto;
 }
-
+/*--------- Uniclr---------*/
 main #games .games-container .game .uniclr {
   width: 300px;
   height: 230px;
@@ -405,7 +405,7 @@ main #games .games-container .game .uniclr .uniclr-logo {
   height: 70px;
   margin-top: auto;
 }
-
+/*--------- kokun ---------*/
 main #games .games-container .game .figtherz {
   width: 300px;
   height: 230px;
@@ -421,24 +421,135 @@ main #games .games-container .game .figtherz {
 main #games .games-container .game .figtherz .figtherz-logo {
   height: 70px;
   margin-top: auto;
-}
 
-main #games .games-container .game .crosstag {
+}
+/*--------- SF6 ---------*/
+main #games .games-container .game .sf6 {
   width: 300px;
   height: 230px;
   display: flex;
   padding: 1rem;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/games/ruby_opacity_60.png");
+  background-image: url("../img/games/juri.png");
   background-size: cover;
   background-position: center;
 }
 
-main #games .games-container .game .crosstag .crosstag-logo {
+main #games .games-container .game .sf6 .sf6-logo {
   height: 70px;
   margin-top: auto;
 }
+
+.sf6-bg-color{
+  background-color: #190332;
+}
+/*--------- KOF ---------*/
+main #games .games-container .game .kof {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/silvye.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .kof .kof-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.kof-bg-color{
+  background-color: #085f79;
+}
+/*--------- SKULLGIRLS ---------*/
+main #games .games-container .game .skullgirls{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/squigly.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .skullgirls .skullgirls-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.skullgirls-bg-color{
+  background-color: #df00a7;
+}
+/*--------- SMASH---------*/
+main #games .games-container .game .smash{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/blee.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .smash .smash-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.smash-bg-color{
+  background-color: #020202;
+}
+/*--------- MARVEL ---------*/
+main #games .games-container .game .marvel{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/morrigan.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .marvel .marvel-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.marvel-bg-color{
+  background-color: #1c43d1;
+}
+/*--------- +R ---------*/
+main #games .games-container .game .ggr{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/jam.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .ggr .ggr-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.ggr-bg-color{
+  background-color: #ef0090;
+}
+
 
 main #games .games-container .game .frase {
   font-weight: 200;
@@ -470,7 +581,7 @@ main #games .games-container .uniclr-bg-color {
 }
 
 main #games .games-container .figtherz-bg-color {
-  background-color: #1d1b1d;
+  background-color: #ea8007ee;
 }
 
 main #games .games-container .crosstag-bg-color {
