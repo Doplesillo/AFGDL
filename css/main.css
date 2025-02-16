@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Sheeping Dogs;
+  src: url('../fonts/Sheeping_Dogs.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -126,20 +132,18 @@ hr {
 }
 
 .landing-banner h1 {
+  font-family: Sheeping Dogs;
   margin-top: auto;
   margin-bottom: 0;
-  color: #f702cb;
+  color: #d869c4;
   font-size: 5rem;
-  -webkit-text-fill-color: #f702cb;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
 }
 
 .landing-banner h2 {
   margin-top: 0;
   font-size: 3rem;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   color: white;
   -webkit-text-fill-color: #ffffff;
@@ -221,7 +225,7 @@ main #about .container div {
 }
 
 main #about .container div:last-child {
-  background-image: url("../img/logoyfondo.jpg");
+  background-image: url("../img/affest2023/banner.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -263,6 +267,7 @@ main #team .team-container .team-cards-container .team-card {
   min-width: 300px;
   min-height: 160px;
   margin: 15px;
+  align-items: center;
 }
 
 main #team .team-container .team-cards-container .team-card .team-logo {
@@ -276,14 +281,14 @@ main #team .team-container .team-cards-container .team-card .team-logo {
 
 main #team .team-container .team-cards-container .team-card .team-photo {
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 2/5;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   object-fit: cover;
   object-position: center;
 }
-
+/*
 main #team .team-container .team-cards-container .team-card .team-social {
   grid-column: 2/3;
   grid-row: 4/5;
@@ -292,7 +297,7 @@ main #team .team-container .team-cards-container .team-card .team-social {
   align-items: center;
   padding: 1rem;
 }
-
+*/
 main #team .team-container .team-cards-container .team-card .team-social .icon {
   height: 20px;
   margin: 3px;
@@ -314,9 +319,11 @@ main #team .team-container .team-cards-container .team-card .team-description .n
 }
 
 main #team .team-container .team-cards-container .team-card .team-description ul {
-  list-style-image: url("../img/icons/icons8-round-16.png");
+  list-style-image: none;
+  list-style: none;
   font-size: 16px;
   margin-top: .5rem;
+  margin-left: -6px;
 }
 
 main #team .team-container .team-cards-container .team-card .team-description ul li {
@@ -477,6 +484,151 @@ main #games .games-container .crosstag-bg-color {
   background-color: #5c375f;
 }
 
+/*--------- kokun ---------*/
+main #games .games-container .game .figtherz {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/android_21_opacity_60.png");
+  background-size: cover;
+  background-position: top;
+}
+
+main #games .games-container .game .figtherz .figtherz-logo {
+  height: 70px;
+  margin-top: auto;
+
+}
+/*--------- SF6 ---------*/
+main #games .games-container .game .sf6 {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/juri_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .sf6 .sf6-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.sf6-bg-color{
+  background-color: #845d8f;
+}
+/*--------- KOF ---------*/
+main #games .games-container .game .kof {
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/silvye_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .kof .kof-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.kof-bg-color{
+  background-color: #0d3d69;
+}
+/*--------- SKULLGIRLS ---------*/
+main #games .games-container .game .skullgirls{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/squigly_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .skullgirls .skullgirls-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.skullgirls-bg-color{
+  background-color: #8d6d85;
+}
+/*--------- SMASH---------*/
+main #games .games-container .game .smash{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/blee_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .smash .smash-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.smash-bg-color{
+  background-color: #343434;
+}
+/*--------- MARVEL ---------*/
+main #games .games-container .game .marvel{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/morrigan_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .marvel .marvel-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.marvel-bg-color{
+  background-color: #3e1e65;
+}
+/*--------- +R ---------*/
+main #games .games-container .game .ggr{
+  width: 300px;
+  height: 230px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/games/jam_opacity_60.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #games .games-container .game .ggr .ggr-logo {
+  height: 70px;
+  margin-top: auto;
+}
+
+.ggr-bg-color{
+  background-color: #3a0000;
+}
+
 footer {
   background-color: #151515;
 }
@@ -594,7 +746,7 @@ footer {
     max-height: 600px;
   }
   main #about .container div:last-child {
-    background-image: url("../img/logoyfondo.jpg");
+    background-image: url("../img/affest2023/banner.jpg");
     background-size: cover;
     background-position: center;
   }
