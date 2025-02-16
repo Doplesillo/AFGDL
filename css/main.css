@@ -128,7 +128,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  min-height: 500px;
 }
 
 .landing-banner h1 {
@@ -136,13 +136,13 @@ hr {
   margin-top: auto;
   margin-bottom: 0;
   color: #d869c4;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 
 .landing-banner h2 {
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
   color: white;
@@ -762,6 +762,12 @@ footer {
   .container-md,
   .container-lg {
     max-width: 960px;
+  }
+  .landing-banner h1 {
+    font-size: 5rem;
+  }
+  .landing-banner h1 {
+    font-size: 3rem;
   }
   main #about .container h3 {
     font-size: 2rem;
